@@ -3,119 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streaming Clone</title>
+    <title>Doctor Who | D+Clone</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
     <section class="background">
-    <header class="header header--is-hidden">
-        <div class="header__container">
-            <h1>
-                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Logo Disney">
-            </h1>
-            <ul class="header__links">
-                <li class="header__links__item"><a class="button button--secondary" href="#">Assine agora</a></li>
-                <li class="header__links__item"><a class="button button--dark" href="#"> Entrar</a></li>
-            </ul>
-
-        </div>
-
-    </header>
-    <section class="hero">
-        <div class="hero__content">
-            <div class="hero__content__branding">
-                <img src="./dist/images/disneyplus.svg" alt="Logo Disney">
+        <div class="background__gradient">
+            <header class="header header--is-hidden">
+                <div class="header__container">
+                    <h1>
+                        <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Logo Disney">
+                    </h1>
+                    <ul class="header__links">
+                        <li class="header__links__item"><a class="button button--secondary" href="#">Assine agora</a></li>
+                        <li class="header__links__item"><a class="button button--dark" href="#"> Entrar</a></li>
+                    </ul>
+        
+                </div>
+        
+            </header>
+            <div class="hero">
+                <div class="hero__content">
+                    <div class="hero__content__branding">
+                        <img src="./dist/images/logos/dw_logo.webp" alt="Logo Doctor Who">
+                    </div>
+                    <ul class="hero__content__infos">
+                        <li class="hero__content__infos__info"><img src="./dist/images/icones/HD.webp" alt="HD"></li>
+                        <li class="hero__content__infos__info"><img src="./dist/images/icones/CC.webp" alt="CC"></li>
+                        <li class="hero__content__infos__info"><img src="./dist/images/icones/AD.webp" alt="AD"></li>
+                    </ul>
+                    <ul class="hero__content__infos ">
+                        <li class="text--small hero__content__infos__info">2024</li>
+                        <li class="text--small hero__content__infos__info hero__content__infos__info--bullet">1 Temporada</li>
+                        <li class="text--small hero__content__infos__info hero__content__infos__info--bullet">Ficção Científica, Ação e Aventura</li>
+                    </ul>
+                    <h3 class="title--small">
+                        T1:E1 A Igreja Da Rua Ruby
+                    </h3>
+                    <p class="title--small">
+                        Ruby Sunday conhece um homem chamado Doutor e sua vida muda para sempre.
+                    </p>
+                    
+                    <ul class="hero__content__actions">
+                        <li class="hero__content__actions__action">
+                            <button class="button button--selected">Assistir</button>
+                        </li>
+                        <li class="hero__content__actions__action">
+                            <button class="button">Trailer</button>
+                        </li>
+                        <li class="hero__content__actions__action">
+                            <button class="button button--rounded">+</button>
+                        </li>
+                        <li class="hero__content__actions__action hero__content__actions__action--image "><img src="./dist/images/logos/originals.webp" alt="Originals">
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <h3 class="title--small">
-                As melhores histórias em um só lugar.
-            </h3>
-            <p>
-                <a href="#" class="link-text">Assinar o Disney+</a>
-            <br>
-            <span class="text">R$ 27,90/mês ou R$ 279,00/ano à vista*</span>
-            </p>
-            <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+">
-                    <button class="button">Assine Agora</button>
-                    <span class="text">R$ 45,90/mês*</span>
-                </li>
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="Disney+ - Star+ - Starzplay">
-                    <button class="button">Assine Agora</button>
-                    <span class="text">R$ 55,90/mês*</span>
-                </li>
-            </ul>
-            <p class="text--small">*O preço pode variar caso a assinatura seja feita através de outras plataformas</p>
+            <div class="shows">
+                <nav class="shows__tabs">
+                    <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em Breve</button>
+                    <button data-tab-button="populares" class="shows__tabs__button">Mais Populares</button>
+                    <button data-tab-button="starplus" class="shows__tabs__button">Mais no Star+</button>
+                </nav>
+                <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+                    <li class="shows__list__item">
+                        <img src="" alt="Desencantada">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Lobisomem">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Sem Limites">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Spidey">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="The Santa Clauses">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Willow">
+                    </li>
+                </ul>
+                <ul data-tab-id="populares" class="shows__list">
+                    <li class="shows__list__item">
+                        <img src="" alt="Bluey">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Cavleira da Lua">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="O Incrível Dr Pol">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Obi-Wan">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Red">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Tudo igual só que não">
+                    </li>
+                </ul>
+                <ul data-tab-id="starplus" class="shows__list">
+                    <li class="shows__list__item">
+                        <img src="" alt="Belair">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Libertadores">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="NBA">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Os Simpsons">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="Premier League">
+                    </li>
+                    <li class="shows__list__item">
+                        <img src="" alt="The Kardashians">
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
-    <section class="shows">
-        <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em Breve</button>
-            <button data-tab-button="populares" class="shows__tabs__button">Mais Populares</button>
-            <button data-tab-button="starplus" class="shows__tabs__button">Mais no Star+</button>
-        </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
-            <li class="shows__list__item">
-                <img src="" alt="Desencantada">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Lobisomem">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Sem Limites">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Spidey">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="The Santa Clauses">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Willow">
-            </li>
-        </ul>
-        <ul data-tab-id="populares" class="shows__list">
-            <li class="shows__list__item">
-                <img src="" alt="Bluey">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Cavleira da Lua">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="O Incrível Dr Pol">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Obi-Wan">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Red">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Tudo igual só que não">
-            </li>
-        </ul>
-        <ul data-tab-id="starplus" class="shows__list">
-            <li class="shows__list__item">
-                <img src="" alt="Belair">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Libertadores">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="NBA">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Os Simpsons">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="Premier League">
-            </li>
-            <li class="shows__list__item">
-                <img src="" alt="The Kardashians">
-            </li>
-        </ul>
-    </section>
 </section>
     <footer class="footer">
         <div class="footer__container">

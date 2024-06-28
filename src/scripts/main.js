@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     const buttons= document.querySelectorAll('[data-tab-button]');
     const tabsContainer=document.querySelectorAll('[data-tab-id]')
-    const heroSection= document.querySelector('.hero');
+    const heroSection = document.querySelector('.hero');
    const alturaHero= heroSection.clientHeight;
    window.addEventListener('scroll',function(){
    const posicaoAtual= this.window.scrollY;

@@ -1,7 +1,13 @@
+@use'variaveis';
+
 .background{
     background-image: url(../images/hero.webp);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-}
+    &__gradient{
+         
+            background: linear-gradient(to bottom, rgba(variaveis.$corDeFundo, .5) 50%, rgba(variaveis.$corDeFundo, .8) 80%);
+        } 
+    }

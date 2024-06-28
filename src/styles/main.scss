@@ -52,9 +52,9 @@ body{
 }
 
 .text--small{
-    @include text(12px);
+    @include text(11px);
     @media(max-width:768px){
-        @include text(11px)
+        @include text(10px)
     }
 }
 .link-text{
@@ -80,9 +80,9 @@ body{
 }
 .title--small
 {
-    @include title(28px);
+    @include title(20px);
     @media(max-width:768px){
-        @include title(22px)
+        @include title(14px)
     }
 }
 
@@ -90,35 +90,35 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 60px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 700;
     color:variaveis.$corTextoSecundario;
-    background-color:variaveis.$corBotaoPrimario;
+    background-color:rgba(variaveis.$corBotao,.7);
     text-transform: uppercase;
     border-radius:4px;
     text-decoration: none;
-    padding: 8px 14px;
+    padding: 8px 16px;
     letter-spacing: 1px;
-    border: 1px solid variaveis.$corBotaoPrimario;
+    border: 1px solid rgba(variaveis.$corBotao,.7);
     &:hover{
-        background-color: lighten(variaveis.$corBotaoPrimario,3%);
+        background-color: lighten(variaveis.$corBotao,15%);
+        border-color: lighten(variaveis.$corBotao,15%);
 
     }
-    &--secondary{
-        background-color:variaveis.$corBotaoSecundario;
-        border-color: variaveis.$corBotaoSecundario;
+    &--selected{
+        background-color:rgba(variaveis.$corTextoSecundario,.7);
+        border: 1px solid rgba(variaveis.$corTextoSecundario,.7);
+        color: variaveis.$corDeFundo;
         &:hover{
-            background-color: lighten( variaveis.$corBotaoSecundario, 3%);
+            background-color: darken(variaveis.$corTextoSecundario,30%);
+            border-color: darken(variaveis.$corTextoSecundario,30%);
         }
     }
-    &--dark{
-        background-color: rgba(variaveis.$corBotaoDark, .8);
-        border-color: variaveis.$corTextoSecundario;
-        &:hover{
-            background-color:variaveis.$corTextoSecundario;
-            color:variaveis.$corBotaoDark;
-        }
+    &--rounded{
+        border-radius: 50%;
+        align-items: center;
+        padding: 15px;
+        font-size: 24px;
     }
     }
 
