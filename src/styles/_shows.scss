@@ -37,6 +37,31 @@
         }
         &__item{
             margin-top: 20px;
+            &--special{
+                display: block;
+                grid-column: span 4;
+                margin-top: 24px;
+                .fake-selector{
+                    max-width: 150px;
+                    background-color: rgba(variaveis.$corBotao,.5 );
+                    border-radius: 65px;
+                    padding:5px 2px;
+                    margin-bottom: 16px;
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }     
+                .season-text{
+                    display: flex;
+                    align-items: center;
+                    .age{
+                        max-width: 20px;
+                        width: 100%;
+                        margin-left: 5px;
+                    }
+                }
+            }
             h3{
                 font-size: 24px;
             }
@@ -49,21 +74,55 @@
             }
             a{
                 border: none;
+                position: relative;
                 &:hover{
                     img{
                         outline: 3px solid variaveis.$corTextoSecundario;
                         border: 3px solid variaveis.$corDeFundo;
+                    }
+                    button{
+                        display:flex;
+                        position: absolute;
+                        bottom: 30px;
+                        left: 10px;
+                        padding:  5px 7px;
+                        background-color: rgba(variaveis.$corDeFundo,.7 );
+                        border-radius: 50%;
+                        border: 3px solid variaveis.$corTextoSecundario;
+                        transition: display, .5s ease;
+                        img
+                        {
+                            max-width: 5px;
+                            width: 100%;
+
+                        }
+                        &:hover{
+                            cursor: pointer;
+                            border:5px solid rgba(variaveis.$corDeFundo,.7 );
+                            outline: 3px solid variaveis.$corTextoSecundario;
+                            padding: 1px 3px;
+
+                            img
+                            {
+                                max-width: 35px;
+                                width: 100%;
+                            }
+                        }
+        
                     }
                 }
                 img{
                     max-width: 100%;
                     border-radius: 4px;
                     box-shadow: 5px 5px 10px black;
-                    margin-bottom: 16px;
-                   
+                    margin-bottom: 16px;        
                 }
                 p{
                     margin: 16px 0;
+                }
+                button{
+                    display:none;
+                    transition: display, .5s ease;
                 }
 
             }

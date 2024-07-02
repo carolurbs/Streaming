@@ -57,6 +57,11 @@
     }
 &__action{
     margin-left: 15px;
+    span{
+        margin-right: 10px;
+        max-width: 10px;
+        width: 100%;
+    }
     &--image{
         align-items: center;
         position: absolute;

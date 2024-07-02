@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./dist/images/favicon.ico">
     <title>Doctor Who | D+Clone</title>
     <script src="https://kit.fontawesome.com/b236a52e02.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/css/main.css">
@@ -47,7 +48,7 @@
                     
                     <ul class="hero__content__actions">
                         <li class="hero__content__actions__action">
-                            <button class="button button--selected">Assistir</button>
+                            <button class="button button--selected"><span><i class="fa-solid fa-play" style="color: rgba(0, 0, 0,.7);"></i></span>Assistir</button>
                         </li>
                         <li class="hero__content__actions__action">
                             <button class="button">Trailer</button>
@@ -68,6 +69,12 @@
                     <button data-tab-button="details" class="shows__tabs__button">Details</button>
                 </nav>       
                 <ul data-tab-id="episodes" class="shows__list shows__list--is-active shows__list--episodes">
+                    <li class="shows__list__item--special">
+                        <div class="fake-selector">
+                            <p class="title--small">Temporada 1</p>
+                        </div>
+                        <p class="text--small season-text"> Classificação da Temporada 1: <span><img class="age" src="./dist/images/icones/a14.webp" alt="14 anos"></span></p>
+                    </li>
                     <li class="shows__list__item">
                         <a href="#">
                             <img src="./dist/images/eps/ep_1.png" alt="Episódio 1">
