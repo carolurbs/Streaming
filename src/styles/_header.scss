@@ -10,18 +10,8 @@
 
 
     &--is-hidden{
-        background-color: transparent;
-        transition: background-color .5s ease;
-
-        .header
-        {
-            &__logo, &__links__item:first-child{
-                opacity: 0;
-                visibility: hidden;
-                transition: opacity .5s ease;
-            }
-        }
-        
+        background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03) 15%, rgba(0, 0, 0, 0.125) 30%, rgba(0, 0, 0, 0.25) 46%, rgba(0, 0, 0, 0.4) 61%, rgba(0, 0, 0, 0.553) 75%, rgba(0, 0, 0, 0.694) 88%, rgba(0, 0, 0, 0.8));
+        transition: background .5s ease; 
     }
     &__container{
         padding: 8px 36px;
@@ -47,14 +37,11 @@
         display: flex;
         &__item{
             margin: 5px;
-            transition: opacity .5s ease;
-
-
         }
     }
 }
 .button{
-    height:50px;
+    height:30px;
     @media(max-width:768px)
     {
         font-size:13px;
