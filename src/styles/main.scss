@@ -87,6 +87,7 @@ body{
 }
 
 .button{
+    height: 48px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -115,12 +116,29 @@ body{
         }
     }
     &--rounded{
+        height: 48px;
+        width: 48px;
         border-radius: 50%;
         align-items: center;
-        padding: 15px;
+        padding: 1px 6px;
         font-size: 24px;
     }
-    
+    &--header{
+        color:variaveis.$corTextoSecundario;
+        cursor: pointer;
+        border: none;
+        background:none;
+        padding: 2px 0;
+        border-bottom: 2px solid transparent;
+        text-transform: uppercase;
+        letter-spacing: 1;
+        border-radius: 0%;
+        &:hover
+        {
+            background: none;
+            border-color: variaveis.$corTextoSecundario;
+        }
+    }
     }
 
 .image-text-section
