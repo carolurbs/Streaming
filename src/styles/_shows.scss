@@ -1,10 +1,11 @@
 @use'variaveis';
 .shows
 {
-    padding: 2vw 5.6vw;
+    padding: 100px 35px;
     min-height: 50vw;
+
     &__list{
-        margin-top:44px ;
+        margin-top:20px ;
         display: none;
         
 
@@ -14,33 +15,100 @@
 
         &--is-active{
             display: grid;
+            align-items: center;
+
         }
         &--episodes{
             grid-template-columns: repeat(4,1fr);
             gap:24px;
-
+        }
+        &--sugestions{
+            grid-template-columns: repeat(5,1fr);
+            gap:24px
+        }
+        &--extras{
+            grid-template-columns: repeat(4,1fr);
+            gap:24px
+        }
+        &--details{
+            grid-template-columns: repeat(3,1fr);
+            gap:24px;
+            align-items: start;
         }
         &__item{
-            &--season{
+            margin-top: 20px;
+            h3{
+                font-size: 24px;
+            }
+            p{
+                margin: 5px 0;
+
+            }
+            .spaced{
+                margin: 0 0 22px;
+            }
+            a{
+                border: none;
+                &:hover{
+                    img{
+                        outline: 3px solid variaveis.$corTextoSecundario;
+                        border: 3px solid variaveis.$corDeFundo;
+                    }
+                }
+                img{
+                    max-width: 100%;
+                    border-radius: 4px;
+                    box-shadow: 5px 5px 10px black;
+                    margin-bottom: 16px;
+                   
+                }
+                p{
+                    margin: 16px 0;
+                }
+
+            }
+            p{
                 display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
+                align-items: center;
+                flex-direction: row;
+                .age{
+                    max-width: 20px;
+                    width: 100%;
+                    margin-left: 25%;
+                }
             }
-            img{
-                max-width: 100%;
-                border-radius: 4px;
+            &__info{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    .img{
+                        max-width: 50px;
+                        width: 100%;
+                        margin-left: 5px;
+                        &--l{
+                            max-width: 30px;
+                            width: 100%;
+                            margin-left: 5px;
+
+                        }
+                        &--sm{
+                            max-width: 80px;
+                            width: 100%;
+
+                        }
+                    }
+                }
             }
-            
-            .age{
-                max-width: 20px;
-                width: 100%;
-            }
+
         }
     }
     &__tabs
     {
         display: flex;
-        justify-content: center;
+        justify-content: left;
+        border-bottom: 1px solid rgba(variaveis.$corTextoPrincipal,.5);
         &__button{
             color:variaveis.$corTextoSecundario;
             font-size: 20px;
