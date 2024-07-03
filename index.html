@@ -3,272 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./dist/images/favicon.ico">
-    <title>Doctor Who | D+Clone</title>
-    <script src="https://kit.fontawesome.com/b236a52e02.js" crossorigin="anonymous"></script>
+    <title>Clone Disney+</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <section class="background">
-        <div class="background__gradient">
-            <header class="header header--is-hidden">
-                <div class="header__container">
-                    <h1>
-                        <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Logo Disney">
-                    </h1>
-                    <ul class="header__links">
-                        <li class="header__links__item"><span class="fa-solid fa-house" style="color: #f9f9f9;"></span><a class="button button--header" href="#">Início</a></li>
-                        <li class="header__links__item"><span class="fa-solid fa-magnifying-glass" style="color: #f9f9f9;"></span><a class="button button--header" href="#">Pesquisa</a></li>
-                        <li class="header__links__item"><span class="fa-solid fa-plus" style="color: #f9f9f9;"></span><a class="button button--header" href="#">Minha Lista</a></li>
-                        <li class="header__links__item header__links__item--mobile-hide"><span class="fa-solid fa-film" style="color: #f9f9f9;"></span><a class="button button--header" href="#">Filmes</a></li>
-                        <li class="header__links__item header__links__item--mobile-hide"><span class="fa-solid fa-tv" style="color: #f9f9f9;"></span><a class="button button--header" href="#">Séries</a></li>
-                        <li class="header__links__item header__links__item--mobile-hide"><span class="fa-solid fa-star" style="color: #f9f9f9;"></span><a class="button button--header" href="#">Originais</a></li>
-                        <li class="header__links__item header__links__item--mobile"><span class="fa-solid fa-ellipsis-vertical" style="color: #f9f9f9;"></li>
-                    </ul>
-                    <button class="header__profile">
-                        <p class="title--small">Doutor</p>
-                        <img src="./dist/images/icones/doctor.png" alt="Usuário">
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Logo Disney">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item"><a class="button button--secondary" href="#">Assine agora</a></li>
+                <li class="header__links__item"><a class="button button--dark" href="#"> Entrar</a></li>
+            </ul>
 
-                    </button>
-        
-                </div>
-        
-            </header>
-            <div class="hero">
-                <div class="hero__content">
-                    <div class="hero__content__branding">
-                        <img src="./dist/images/logos/dw_logo.webp" alt="Logo Doctor Who">
-                    </div>
-                    <ul class="hero__content__infos">
-                        <li class="hero__content__infos__info"><img src="./dist/images/icones/HD.webp" alt="HD"></li>
-                        <li class="hero__content__infos__info"><img src="./dist/images/icones/CC.webp" alt="CC"></li>
-                        <li class="hero__content__infos__info"><img src="./dist/images/icones/AD.webp" alt="AD"></li>
-                    </ul>
-                    <ul class="hero__content__infos ">
-                        <li class="text--small hero__content__infos__info">2024</li>
-                        <li class="text--small hero__content__infos__info hero__content__infos__info--bullet">1 Temporada</li>
-                        <li class="text--small hero__content__infos__info hero__content__infos__info--bullet">Ficção Científica, Ação e Aventura</li>
-                    </ul>
-                    <h3 class="title--small">
-                        T1:E1 A Igreja Da Rua Ruby
-                    </h3>
-                    <p class="title--small">
-                        Ruby Sunday conhece um homem chamado Doutor e sua vida muda para sempre.
-                    </p>
-                    
-                    <ul class="hero__content__actions">
-                        <li class="hero__content__actions__action">
-                            <button class="button button--selected"><span><i class="fa-solid fa-play" style="color: rgba(0, 0, 0,.7);"></i></span>Assistir</button>
-                        </li>
-                        <li class="hero__content__actions__action">
-                            <button class="button">Trailer</button>
-                        </li>
-                        <li class="hero__content__actions__action">
-                            <button class="button button--rounded">+</button>
-                        </li>
-                        <li class="hero__content__actions__action hero__content__actions__action--image "><img src="./dist/images/logos/originals.webp" alt="Originals">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="shows">
-                <nav class="shows__tabs">
-                    <button data-tab-button="episodes" class="shows__tabs__button shows__tabs__button--is-active">Episódios</button>
-                    <button data-tab-button="sugestions" class="shows__tabs__button">Sugestões</button>
-                    <button data-tab-button="extras" class="shows__tabs__button">Extras</button>
-                    <button data-tab-button="details" class="shows__tabs__button">Details</button>
-                </nav>       
-                <ul data-tab-id="episodes" class="shows__list shows__list--is-active shows__list--episodes">
-                    <li class="shows__list__item--special">
-                        <div class="fake-selector">
-                            <p class="title--small">Temporada 1</p>
-                        </div>
-                        <p class="text--small season-text"> Classificação da Temporada 1: <span><img class="age" src="./dist/images/icones/a14.webp" alt="14 anos"></span></p>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/eps/ep_1.png" alt="Episódio 1">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button>
-                        </a>
-                        <h3 class="title--small">1. A Igreja Da Rua Ruby</h3>
-                        <p class="text">Ruby Sunday conhece um homem chamado Doutor e sua vida muda para sempre.</p>
-                        <p class="text--small"> (57min) <span><img class="age" src="./dist/images/icones/a14.webp" alt="14 anos"></span></p>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/eps/ep_2.png" alt="Episódio 2">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button>
-                        </a>
-                        <h3 class="title--small">2.Bebês do Espaço</h3>
-                        <p class="text">Ruby descobre segredos do Doutor ao encontrar um bicho-papão em uma Fazenda de Bebês no futuro.</p>
-                        <p class="text--small"> (49min) <span><img class="age" src="./dist/images/icones/a12.webp" alt="12 anos"></span></p>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/eps/ep_3.png" alt="Episódio 3">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button>
-                        </a>
-                        <h3 class="title--small">3.O Som do Diabo </h3>
-                        <p class="text">O Doutor e Ruby conhecem Os Beatles, mas terminam em uma batalha contra a entidade Maestro.</p>
-                        <p class="text--small"> (52min) <span><img class="age" src="./dist/images/icones/a12.webp" alt="12 anos"></span></p>
-
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/eps/ep_4.png" alt="Episódio 4">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button>
-                        </a>
-                        <h3 class="title--small">4.Boom</h3>
-                        <p class="text">Preso em um mundo de guerra, o Doutor tenta salvar o planeta sem disparar uma mina terrestre.</p>
-                        <p class="text--small"> (47min) <span><img class="age" src="./dist/images/icones/a12.webp" alt="12 anos"></span></p>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/eps/ep_5.png" alt="Episódio 5">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button> 
-                        </a>
-                        <h3 class="title--small">5.73 Jardas</h3>
-                        <p class="text">A Tardis aterrissa no litoral do País de Gales, onde lendas antigas provocam medo.</p>
-                        <p class="text--small"> (50min) <span><img class="age" src="./dist/images/icones/a12.webp" alt="12 anos"></span></p>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/eps/ep_6.png" alt="Episódio 6">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button>
-                        
-                        </a>
-                        <h3 class="title--small">6.Ponto e Bolha</h3>
-                        <p class="text">O Doutor e Ruby tentam ajudar os cidadãos de Tempo-Bom a se salvarem de um terror invisível.</p>
-                        <p class="text--small"> (46min) <span><img class="age" src="./dist/images/icones/a12.webp" alt="12 anos"></span></p>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/eps/ep_7.png" alt="Episódio 7">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button>
-                        </a>
-                        <h3 class="title--small">7.Ladino</h3>
-                        <p class="text">Em um baile em 1813, a vida do Doutor muda ao conhecer um caçador de recompensas chamado Ladino.</p>
-                        <p class="text--small"> (47min) <span><img class="age" src="./dist/images/icones/a12.webp" alt="12 anos"></span></p>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/eps/ep_8.png" alt="Episódio 8">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button>
-                        </a>
-                        <h3 class="title--small">8.A Lenda de Ruby Sunday</h3>
-                        <p class="text">O Doutor e a UNIT investigam a noite do nascimento de Ruby, mas libertam um mal ancestral</p>
-                        <p class="text--small"> (47min) <span><img class="age" src="./dist/images/icones/a12.webp" alt="12 anos"></span></p>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/eps/ep_9.png" alt="Episódio 9">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button>
-                        </a>
-                        <h3 class="title--small">9.Império da Morte</h3>
-                        <p class="text">O Doutor perde e o al instaura seu reinado, mas uma mulher tem a chave para salvar toda a criação.</p>
-                        <p class="text--small"> (57min) <span><img class="age" src="./dist/images/icones/a12.webp" alt="12 anos"></span></p>
-                    </li>
-                </ul>
-                <ul data-tab-id="sugestions" class="shows__list shows__list--sugestions">
-                    <li class="shows__list__item">
-                        <a href="#"><img src="./dist/images/sugestoes/nell.png" alt="Nell"></a>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#"><img src="./dist/images/sugestoes/percy-jackson.png" alt="Percy Jackson"></a>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#"><img src="./dist/images/sugestoes/the-orville.png" alt="The Orville"></a>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#"><img src="./dist/images/sugestoes/extraordinaria.png" alt="Extraordinária"></a>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#"><img src="./dist/images/sugestoes/indiana-jones.png" alt="Indiana Jones"></a>   
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#"><img src="./dist/images/sugestoes/loki.png" alt="Loki"></a>
-                    </li>
-                    <li class="shows__list__item">
-                        <a href="#"><img src="./dist/images/sugestoes/dw-especial-1.png" alt="Doctor Who Especial 1"></a>    
-                    </li>
-                    <li class="shows__list__item">
-                    <a href="#"><img src="./dist/images/sugestoes/dw-especial-2.png" alt="Doctor Who Especial 2"></a> 
-                    </li>
-                </ul>
-                <ul data-tab-id="extras" class="shows__list shows__list--extras">
-                    
-                    <li class="shows__list__item">
-                        <a href="#">
-                            <img src="./dist/images/extras/trailer.png" alt="Trailer">
-                            <button>
-                                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                            </button>
-                        </a>
-                        <h3 class="title--small">Trailer 2 | Doctor Who</h3>
-                        <p class="text">Veja o trailer.</p>
-                        <p class="text--small"> (3min) <span><img class="age" src="./dist/images/icones/a12.webp" alt="12 anos"></span></p>
-                    </li>
-                </ul>
-                <ul data-tab-id="details" class="shows__list shows__list--details">
-                    
-                    <li class="shows__list__item">
-                        <div class="shows__list__item__info">
-                        <h3 class="title--small spaced">Doctor Who</h3>
-                        <p class="title--small spaced">O Doutor e sua companheira Ruby Sunday viajam através do espaço e tempo vivendo aventuras da Era da Regência na Inglaterra a mundos futuristas destruídos por guerras. Ao longo de suas aventuras na TARDIS - uma máquina de viagem no tempo com a forma de uma cabine telefônica policial - eles encontram amigos incríveis e inimigos perigosos, inclusive um bicho-papão terrível e o inimigo mais poderoso que o Doutor já enfrentou.</p>
-                        <p class="title--small spaced">Contém sequências de luzes que podem afetar pessoas fotossensíveis.</p>
-                        </div>
-                    </li>
-                    <li class="shows__list__item">
-                        <div class="shows__list__item__info">
-                        <h3 class="title--small">Data de Lançamento:</h3>
-                        <p class="text--small">2024</p>
-                        </div>
-                        <div class="shows__list__item__info">
-                            <h3 class="title--small">Gênero:</h3>
-                            <p class="text--small">Ficção Científica, Ação e Aventura</p>
-                        </div>
-                        <div class="shows__list__item__info">
-                            <h3 class="title--small">Disponível nos seguintes formatos:</h3>
-                            <ul>
-                                <li><img class="img img--sm" src="./dist/images/icones/4k_ultr_hd.webp" alt="4K ULTRA HD"></li>
-                                <li><img class="img img--sm" src="./dist/images/icones/dolbyvision.webp" alt="Dolby Vision"></li>
-                                <li><img class="img" src="./dist/images/icones/hdr10.webp" alt="HDR10"></li>
-                                <li><img class="img img--l" src="./dist/images/icones/5.1.webp" alt="5.1"></li>
-                                <li><img class="img img--l" src="./dist/images/icones/CC.webp" alt="CC"></li>
-                                <li><img class="ig img--l" src="./dist/images/icones/AD.webp" alt="AD"></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="shows__list__item">
-                        <div class="shows__list__item__info">
-                        <h3 class="title--small">Elenco:</h3>
-                        <p class="text--small">Ncuti Gatwa</p>
-                        <p class="text--small">Millie Gibson</p>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
         </div>
-</section>
+
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/disneyplus.svg" alt="Logo Disney">
+            </div>
+            <h3 class="title--small">
+                As melhores histórias em um só lugar.
+            </h3>
+            <p>
+                <a href="#" class="link-text">Assinar o Disney+</a>
+            <br>
+            <span class="text">R$ 27,90/mês ou R$ 279,00/ano à vista*</span>
+            </p>
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+">
+                    <button class="button">Assine Agora</button>
+                    <span class="text">R$ 45,90/mês*</span>
+                </li>
+                <li class="hero__content__combos__combo">
+                    <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="Disney+ - Star+ - Starzplay">
+                    <button class="button">Assine Agora</button>
+                    <span class="text">R$ 55,90/mês*</span>
+                </li>
+            </ul>
+            <p class="text--small">*O preço pode variar caso a assinatura seja feita através de outras plataformas</p>
+
+        </div>
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em Breve</button>
+            <button data-tab-button="populares" class="shows__tabs__button">Mais Populares</button>
+            <button data-tab-button="starplus" class="shows__tabs__button">Mais no Star+</button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem Limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The Santa Clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Cavleira da Lua">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="O Incrível Dr Pol">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi-Wan">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg" alt="Red">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo igual só que não">
+            </li>
+        </ul>
+        <ul data-tab-id="starplus" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="NBA">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="Os Simpsons">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="Premier League">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="The Kardashians">
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <h2 class="title--big">Escolha seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney Plus">
+                <strong class="text--big">R$ 27,90/mês*</strong>
+                <p class="text">
+                    No Disney+ você encontra as últimas estreias do cinema. originais e clássicos inesquecíveis
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney Plus e StarPlus">
+                <strong class="text--big">R$ 45,90/mês*</strong>
+                <p class="text">
+                    Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.
+
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney Plus, StarPlus e Starzplay">
+                <strong class="text--big">R$ 55,90/mês*</strong>
+                <p class="text">
+                    Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+        </ul>
+        <p class="text--small">*O preço pode variar caso a assinatura seja feita através de outras plataformas</p>
+    </section>
+    <section class="image-text-section">
+        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Tv, pc. tablet e celular">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Assista do seu jeito</h2>
+            <p class="text--big">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.</p>
+        </div>
+    </section>
+    <section class="image-text-section image-text-section--image-full-width">
+        <picture>
+            <source media="(max-width:768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/>
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        </picture>
+        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
+            <h2 class="title">Baixe filmes e séries</h2>
+            <p class="text--big">Baixe e assista onde e quando quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
+        </div>
+    </section>
+    <section class="available-devices">
+        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/computador.png" alt="Computador">
+                <h4 class="title--small">Computador</h4>
+                <ul class="text">
+                    <li>ChromeOS</li>
+                    <li>MacOs</li>
+                    <li>PC Windows</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/tv.png" alt="TV">
+                <h4 class="title--small">TV</h4>
+                <ul class="text">
+                    <li>Amazon Fire TV</li>
+                    <li>Android TV</li>
+                    <li>Apple TV</li>
+                    <li>Chromecast</li>
+                    <li>TVs LG</li>
+                    <li>Roku</li>
+                    <li>Samsung</li>
+
+
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/videogames.png" alt="Videogames">
+                <h4 class="title--small">Videogames</h4>
+                <ul class="text">
+                    <li>PS4</li>
+                    <li>PS5</li>
+                    <li>Xbox One</li>
+                    <li>Xbox Series S</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/celular.png" alt="Celulares e Tablets">
+                <h4 class="title--small">Celulares e Tablets</h4>
+                <ul class="text">
+                    <li>Tablets Amazon Fire</li>
+                    <li>Celulares e Tablets Android</li>
+                    <li>iPhone e iPad</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question"data-faq-question>
+                    <strong>O que está incluído no Disney+?</strong>
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>Benefícios de assinar o Disney+:</p>
+                    <ul>
+                        <li>Estreias de filmes, séries originais e clássicos da Disney, Pixar, Marvel, Star Wars, National Geographic e Star.</li>
+                        <li>Os torneios mais importantes do mundo e programas da ESPN ao vivo.</li>
+                        <li>Até quatro telas ao mesmo tempo com o Disney+ Premium, e até duas com o Disney+ Padrão.</li>
+                        <li>Downloads, criação de perfis e controle parental para personalizar a experiência por idade, de acordo com o seu plano.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="faq__questions__item" >
+                <div class="faq__questions__item__question"data-faq-question>
+                    <strong>Quais formas de pagamento posso utilizar?</strong>
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google Play Store, App Store da Apple, Mercado Livre e provedores locais de TV, telefonia e internet.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question"data-faq-question>
+                    <strong> Onde posso assistir ao Disney+?</strong>
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames, decodificadores e smart TVs. Confira a <span><a href="#"> lista completa de dispositivos compatíveis na Central de Ajuda.</a></span>
+                </div>
+            </li>
+        </ul>
+    </section>
     <footer class="footer">
         <div class="footer__container">
             <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">

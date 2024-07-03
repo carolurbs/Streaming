@@ -1,8 +1,10 @@
 @use 'variaveis';
 @use'header';
-@use 'background';
 @use 'hero';
 @use 'shows';
+@use'plans';
+@use'available-devices';
+@use 'faq';
 @use'footer';
 
 @font-face{
@@ -52,9 +54,9 @@ body{
 }
 
 .text--small{
-    @include text(11px);
+    @include text(12px);
     @media(max-width:768px){
-        @include text(10px)
+        @include text(11px)
     }
 }
 .link-text{
@@ -80,63 +82,44 @@ body{
 }
 .title--small
 {
-    @include title(20px);
+    @include title(28px);
     @media(max-width:768px){
-        @include title(14px)
+        @include title(22px)
     }
 }
 
 .button{
-    height: 48px;
     display:flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    font-weight: 700;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
     color:variaveis.$corTextoSecundario;
-    background-color:rgba(variaveis.$corBotao,.7);
+    background-color:variaveis.$corBotaoPrimario;
     text-transform: uppercase;
     border-radius:4px;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 14px;
     letter-spacing: 1px;
-    border: 1px solid rgba(variaveis.$corBotao,.7);
+    border: 1px solid variaveis.$corBotaoPrimario;
     &:hover{
-        background-color: lighten(variaveis.$corBotao,15%);
-        border-color: lighten(variaveis.$corBotao,15%);
+        background-color: lighten(variaveis.$corBotaoPrimario,3%);
 
     }
-    &--selected{
-        background-color:rgba(variaveis.$corTextoSecundario,.7);
-        border: 1px solid rgba(variaveis.$corTextoSecundario,.7);
-        color: variaveis.$corDeFundo;
+    &--secondary{
+        background-color:variaveis.$corBotaoSecundario;
+        border-color: variaveis.$corBotaoSecundario;
         &:hover{
-            background-color: darken(variaveis.$corTextoSecundario,30%);
-            border-color: darken(variaveis.$corTextoSecundario,30%);
+            background-color: lighten( variaveis.$corBotaoSecundario, 3%);
         }
     }
-    &--rounded{
-        height: 48px;
-        width: 48px;
-        border-radius: 50%;
-        align-items: center;
-        padding: 1px 6px;
-        font-size: 24px;
-    }
-    &--header{
-        color:variaveis.$corTextoSecundario;
-        cursor: pointer;
-        border: none;
-        background:none;
-        padding: 2px 0;
-        border-bottom: 2px solid transparent;
-        text-transform: uppercase;
-        letter-spacing: 1;
-        border-radius: 0%;
-        &:hover
-        {
-            background: none;
-            border-color: variaveis.$corTextoSecundario;
+    &--dark{
+        background-color: rgba(variaveis.$corBotaoDark, .8);
+        border-color: variaveis.$corTextoSecundario;
+        &:hover{
+            background-color:variaveis.$corTextoSecundario;
+            color:variaveis.$corBotaoDark;
         }
     }
     }

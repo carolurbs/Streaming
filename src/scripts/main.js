@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function(){
     const buttons= document.querySelectorAll('[data-tab-button]');
     const tabsContainer=document.querySelectorAll('[data-tab-id]')
-    const heroSection = document.querySelector('.hero');
+    const questions=document.querySelectorAll('[data-faq-question]'); //FAQ
+    const heroSection= document.querySelector('.hero');
    const alturaHero= heroSection.clientHeight;
    window.addEventListener('scroll',function(){
    const posicaoAtual= this.window.scrollY;
@@ -12,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function(){
     else{
         exibeElementosHeader();
     }
+
+
+
 
    });
     for(let i=0; i<buttons.length;i++){
@@ -25,8 +29,19 @@ document.addEventListener('DOMContentLoaded', function(){
 
         })
     }
+/* For do faq */
+    for(let i=0;i<questions.length; i++){
+        questions[i].addEventListener('click',abreOuFechaResposta)
+
+    }
+
 })
 
+function abreOuFechaResposta(elemento){
+    const classe = 'faq__questions__item--is-open';
+    const elementoPai= elemento.target.parentNode;
+    elementoPai.classList.toggle(classe);
+}
 function removeBotaoAtivo(){
     const buttons= document.querySelectorAll('[data-tab-button]');
     for(let i=0; i<buttons.length;i++){

@@ -1,13 +1,13 @@
 @use'variaveis';
 .shows
 {
-    padding: 100px 35px;
+    padding: 2vw 5.6vw;
     min-height: 50vw;
-
     &__list{
-        margin-top:20px ;
+        margin-top:44px ;
         display: none;
-        
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:24px;
 
         @media(max-width:768px) {
             grid-template-columns: 1fr 1fr;
@@ -15,159 +15,18 @@
 
         &--is-active{
             display: grid;
-            align-items: center;
-
-        }
-        &--episodes{
-            grid-template-columns: repeat(4,1fr);
-            gap:24px;
-        }
-        &--sugestions{
-            grid-template-columns: repeat(5,1fr);
-            gap:24px
-        }
-        &--extras{
-            grid-template-columns: repeat(4,1fr);
-            gap:24px
-        }
-        &--details{
-            grid-template-columns: repeat(3,1fr);
-            gap:24px;
-            align-items: start;
         }
         &__item{
-            margin-top: 20px;
-            &--special{
-                display: block;
-                grid-column: span 4;
-                margin-top: 24px;
-                .fake-selector{
-                    max-width: 150px;
-                    background-color: rgba(variaveis.$corBotao,.5 );
-                    border-radius: 65px;
-                    padding:5px 2px;
-                    margin-bottom: 16px;
-                    p{
-                        font-size: 16px;
-                        text-align: center;
-                    }
-                }     
-                .season-text{
-                    display: flex;
-                    align-items: center;
-                    .age{
-                        max-width: 20px;
-                        width: 100%;
-                        margin-left: 5px;
-                    }
-                }
+            img{
+                max-width: 100%;
+                border-radius: 4px;
             }
-            h3{
-                font-size: 24px;
-            }
-            p{
-                margin: 5px 0;
-
-            }
-            .spaced{
-                margin: 0 0 22px;
-            }
-            a{
-                border: none;
-                position: relative;
-                &:hover{
-                    img{
-                        outline: 3px solid variaveis.$corTextoSecundario;
-                        border: 3px solid variaveis.$corDeFundo;
-                    }
-                    button{
-                        display:flex;
-                        position: absolute;
-                        bottom: 30px;
-                        left: 10px;
-                        padding:  5px 7px;
-                        background-color: rgba(variaveis.$corDeFundo,.7 );
-                        border-radius: 50%;
-                        border: 3px solid variaveis.$corTextoSecundario;
-                        transition: display, .5s ease;
-                        img
-                        {
-                            max-width: 5px;
-                            width: 100%;
-
-                        }
-                        &:hover{
-                            cursor: pointer;
-                            border:5px solid rgba(variaveis.$corDeFundo,.7 );
-                            outline: 3px solid variaveis.$corTextoSecundario;
-                            padding: 1px 3px;
-
-                            img
-                            {
-                                max-width: 35px;
-                                width: 100%;
-                            }
-                        }
-        
-                    }
-                }
-                img{
-                    max-width: 100%;
-                    border-radius: 4px;
-                    box-shadow: 5px 5px 10px black;
-                    margin-bottom: 16px;        
-                }
-                p{
-                    margin: 16px 0;
-                }
-                button{
-                    display:none;
-                    transition: display, .5s ease;
-                }
-
-            }
-            p{
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                .age{
-                    max-width: 20px;
-                    width: 100%;
-                    margin-left: 25%;
-                }
-            }
-            &__info{
-                ul{
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    align-items: center;
-                    .img{
-                        max-width: 50px;
-                        width: 100%;
-                        margin-left: 5px;
-                        &--l{
-                            max-width: 30px;
-                            width: 100%;
-                            margin-left: 5px;
-
-                        }
-                        &--sm{
-                            max-width: 80px;
-                            width: 100%;
-
-                        }
-                    }
-                }
-            }
-
         }
     }
     &__tabs
     {
         display: flex;
-        justify-content: left;
-        border-bottom: 1px solid rgba(variaveis.$corTextoPrincipal,.5);
+        justify-content: center;
         &__button{
             color:variaveis.$corTextoSecundario;
             font-size: 20px;
