@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Doctor Who| Clone+</title>
+    <title> Doctor Who</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <div class="background">
     <header class="header header--is-hidden">
         <div class="header__container">
             <h1>
                 <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Logo Disney">
             </h1>
             <ul class="header__links">
-                <li class="header__links__item"><a class="button" href="#">Obter Clone+</a></li>
+                <li class="header__links__item"><a class="button" href="#">Obter Disney+</a></li>
                 <li class="header__links__item"><a class="button button--dark" href="#">Iniciar sessão</a></li>
             </ul>
 
@@ -27,13 +28,15 @@
             <ul class="hero__content__infos">
                 <li class="hero__content__infos__info"><img src="./dist/images/icones/AD.webp" alt="AD"></li>
                 <li class="hero__content__infos__info"><img src="./dist/images/icones/CC.webp" alt="CC"></li>
-            </ul>
-            <ul class="hero__content__infos ">
                 <li class="text--small hero__content__infos__info">2024</li>
                 <li class="text--small hero__content__infos__info hero__content__infos__info--bullet">1 Temporada</li>
-                <li class="text--small hero__content__infos__info hero__content__infos__info--bullet">Ficção Científica, Ação e Aventura</li>
+
+
             </ul>
-            <button class="button button--selected">Obter Clone+</button>
+            <ul class="hero__content__infos ">
+                <li class="text--small hero__content__infos__info">Ficção Científica, Ação e Aventura</li>
+            </ul>
+            <button class="button">Obter Disney+</button>
             <p class="text">
                 O Doutor e a sua companheira Ruby Sunday viajam através do tempo e espaço, com aventuras desde a época da Regência em Inglaterra, até mundos futuros devastados pela guerra. Ao longo das suas aventuras na TARDIS - uma nave que viaja no tempo em forma de cabina da Polícia - eles encontram amigos incríveis e inimigos perigosos, incluindo um bicho-papão assustador, e o inimigo mais poderoso de sempre do Doutor.
             </p>
@@ -41,30 +44,47 @@
 
     </section>
     <section class="shows">
-        <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em Breve</button>
-        </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+        <div class="shows__details">
+            <h3 class="title">Detalhes</h3>
+        </div>
+        <ul class="shows__infos">
+            <li class="shows__infos__info">
+                <h3 class="title--big">Doctor Who</h3>
+            </li>
+            <li class="shows__infos__info"></li>
+            <li class="shows__infos__info"></li>
+
+
+        </ul>
+
+        <ul class="shows__list">
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+                <a href="#"><img src="./dist/images/sugestoes/nell.png" alt="Nell"></a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomem">
+                <a href="#"><img src="./dist/images/sugestoes/percy-jackson.png" alt="Percy Jackson"></a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem Limites">
+                <a href="#"><img src="./dist/images/sugestoes/the-orville.png" alt="The Orville"></a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+                <a href="#"><img src="./dist/images/sugestoes/extraordinaria.png" alt="Extraordinária"></a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The Santa Clauses">
+                <a href="#"><img src="./dist/images/sugestoes/indiana-jones.png" alt="Indiana Jones"></a>   
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+                <a href="#"><img src="./dist/images/sugestoes/loki.png" alt="Loki"></a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#"><img src="./dist/images/sugestoes/dw-especial-1.png" alt="Doctor Who Especial 1"></a>    
+            </li>
+            <li class="shows__list__item">
+            <a href="#"><img src="./dist/images/sugestoes/dw-especial-2.png" alt="Doctor Who Especial 2"></a> 
             </li>
         </ul>
     </section>
+</div>
     <footer class="footer">
         <div class="footer__container">
             <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">

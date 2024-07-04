@@ -5,16 +5,12 @@
     min-height: 50vw;
     &__list{
         margin-top:44px ;
-        display: none;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap:24px;
 
         @media(max-width:768px) {
             grid-template-columns: 1fr 1fr;
-        }
-
-        &--is-active{
-            display: grid;
         }
         &__item{
             img{
@@ -23,21 +19,17 @@
             }
         }
     }
-    &__tabs
+    &__details
     {
         display: flex;
-        justify-content: center;
-        &__button{
-            color:variaveis.$corTextoSecundario;
+        justify-content: left;
+        border-bottom: 1px solid variaveis.$corTextoPrincipal;
+        .title{
+            color:variaveis.$corTextoPrincipal;
             font-size: 20px;
-            border: none;
-            padding-bottom: 5px;
-            background: none;
+            padding-bottom: 15px;
             text-transform: uppercase;
             margin: 0 1vw;
-            cursor: pointer;
-            border-bottom: 5px solid transparent;
-
             @media(max-width:768px){
                 white-space: nowrap;
                 overflow-x:scroll;
@@ -45,9 +37,6 @@
         
             }
 
-            &--is-active{
-                border-color:variaveis.$corTextoSecundario;
-            }
             @media(max-width:768px){
                 font-size: 16px;
         

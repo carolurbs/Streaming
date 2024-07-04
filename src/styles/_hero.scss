@@ -1,10 +1,9 @@
 @use 'variaveis';
 
 .hero{
-    padding: 5.6vw;
-    min-height:80vh;
+    padding-left: 5.6vw;
     background-image: url(../images/hero_desktop.jpeg);
-    text-align: center;
+    text-align: left;
     background-size: cover;
 
     @media(max-width:768px){
@@ -16,14 +15,18 @@
     }
     .button{
         margin-top: 2vw;
-        margin-bottom: 8px;
+        margin-bottom: 18px;
+        max-width: 185px;
+        width: 100%;
     }
 &__content{
     max-width: 841px;
-    padding: 75px 55px 45px;
+    padding: 75px 12px;
 &__branding{
-    max-width: 320px;
-    margin:0 auto 38px;
+    img{
+        max-width: 192px;
+        width:100%
+    }
     @media(max-width:768px){
         max-width: 180px;
     }
@@ -32,24 +35,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 50px;
     &__info{
-        margin: 2px 5px;
         &--bullet{
             list-style: disc;
-            margin-left:15px;
+            margin-left:20px;
         }
         img{
-            max-width: 28px;
+            max-width: 38px;
             width: 100%;
+            margin-right: 10px;
         }
     }
 }
-.text
-{
-
-    text-align: left;
-}
-
 }
 }
