@@ -3,6 +3,7 @@
 @use'header';
 @use 'hero';
 @use 'shows';
+@use'sugestions';
 @use'footer';
 
 @font-face{
@@ -31,10 +32,17 @@ body{
     line-height: $fontSize+10px;
     color: variaveis.$corTextoPrincipal;
 }
-@mixin title($fontSize:16px)
+@mixin title($fontSize:14px)
 {
     @include text($fontSize);
     color: variaveis.$corTextoSecundario;
+}
+.text--xl
+{
+    @include text(20px);
+    @media(max-width:768px){
+        @include text(15px)
+    }
 }
 .text--big
 {
@@ -51,13 +59,20 @@ body{
     }
 }
 
+
 .text--small{
     @include text(12px);
     @media(max-width:768px){
         @include text(11px)
     }
 }
-
+.title--xl
+{
+    @include title(24px);
+    @media(max-width:768px){
+        @include title(26px)
+    }
+}
 .title--big
 {
     @include title(18px);

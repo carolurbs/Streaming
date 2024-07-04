@@ -2,17 +2,7 @@
 
 .hero{
     padding-left: 5.6vw;
-    background-image: url(../images/hero_desktop.jpeg);
-    text-align: left;
-    background-size: cover;
 
-    @media(max-width:768px){
-        background-image: url(../images/hero_celular.jpeg);
-        padding-top: calc(50vw + 25px);
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: -55px;
-    }
     .button{
         margin-top: 2vw;
         margin-bottom: 18px;

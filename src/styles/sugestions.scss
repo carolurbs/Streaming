@@ -1,0 +1,62 @@
+@use'variaveis';
+
+.sugestions{
+    padding-left: 5.6vw;
+    &__container{
+        margin-top: 16px;
+    }
+&__scroll{
+    height: 225px;
+    width: 100%;
+    overflow-x:scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0;
+        &__item{
+            padding: 0 10px;
+            a{
+                border: none;
+                &:hover{
+                    img{
+                        outline: 3px solid variaveis.$corTextoSecundario;
+                        border: 3px solid variaveis.$corDeFundo;
+                    }
+                }
+                img{
+                    max-width: 300px;
+                    border-radius: 4px;
+                    box-shadow: 5px 5px 10px black;
+                }
+            }
+
+        }
+    }
+    }
+&__control{
+    position: relative;
+    .backward__button,.forward__button{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        position: absolute;
+        bottom: 100px;
+        z-index: 1;
+        border: none;
+        outline: none;
+        background:none;
+        padding: 15px;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 50px;
+        &--hidden{
+            display: none;
+        }
+    }
+}
+}
