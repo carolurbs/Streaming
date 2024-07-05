@@ -4,8 +4,9 @@
     padding: 0 5.6vw;
     &__infos{
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 3fr 2fr 2fr;
         gap:24px;
+        flex-wrap: wrap;
 
         &__info
         {
