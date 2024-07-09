@@ -4,9 +4,28 @@
     padding: 0 5.6vw;
     &__infos{
         display: grid;
-        grid-template-columns: 3fr 2fr 2fr;
+        grid-template-columns: 2fr 1fr 1fr;
         gap:24px;
-        flex-wrap: wrap;
+        
+        @media(max-width:1024px){
+            gap:14px;
+            &__info{
+                &--line{
+                    grid-column: 1/4;
+                    margin-bottom: 18px;
+                }
+                &--list,&--colunm{
+                    margin-top:8px;
+                }
+                &--list{
+                    grid-column:1/2;
+                }
+                &--colunm{
+                    grid-column: 2/3;
+                }
+
+            }
+        }
 
         &__info
         {
@@ -15,9 +34,11 @@
             justify-content: left;
             text-align: left;
             margin-top: 14px;
-            &--list{
-                margin-top: 60px;
-                padding-left: 16px;
+            @media(min-width:1025px){
+                &--list{
+                    margin-top: 60px;
+                    padding-left: 16px;
+                }
             }
             .title--big, .title--xl{
                 margin-bottom: 14px;

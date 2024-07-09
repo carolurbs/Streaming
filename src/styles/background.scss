@@ -7,10 +7,18 @@
     background-attachment: fixed;
     background-position: center;
     &__gradient{
-        background: linear-gradient(to bottom, rgba(variaveis.$corDeFundo,.5),rgba(variaveis.$corDeFundo,1));
+        background: linear-gradient(to bottom, rgba(variaveis.$corDeFundo,.3),rgba(variaveis.$corDeFundo,1));
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;    
+    }
+    @media(max-width:1024px)
+    {
+        background-image: url(../images/hero-mobile.webp);
+        background-size:100% auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position:initial;
     }
 }
