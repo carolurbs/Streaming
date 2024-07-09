@@ -1,0 +1,32 @@
+.popupMenu{
+    @media(min-width:769px)
+    {
+        display: none;    
+    }
+    @media(max-width:768px)
+    {
+        
+        &__container{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(0,0,0,.8);
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        height: 88px;
+        width: 100vw;
+        transition: display .5s ease;  
+        .button{
+            max-width: 150px;
+        }
+        &--is-hidden{
+            display: none;
+            transition: display .5s ease;  
+        }
+    }
+
+}
+}

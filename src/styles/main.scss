@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'background';
 @use'header';
+@use'popupMenu';
 @use 'hero';
 @use 'shows';
 @use'sugestions';
@@ -40,61 +41,38 @@ body{
 .text--xl
 {
     @include text(20px);
-    @media(max-width:768px){
-        @include text(15px)
-    }
 }
 .text--big
 {
     @include text(18px);
-    @media(max-width:768px){
-        @include text(15px)
-    }
 }
 
 .text{
     @include text;
-    @media(max-width:768px){
-        @include text(14px)
-    }
 }
 
 
 .text--small{
     @include text(12px);
-    @media(max-width:768px){
-        @include text(11px)
-    }
 }
 .title--xl
 {
     @include title(24px);
-    @media(max-width:768px){
-        @include title(26px)
-    }
+
 }
 .title--big
 {
     @include title(18px);
-    @media(max-width:768px){
-        @include title(26px)
-    }
 }
 
 .title
 {
     @include title;
 
-    @media(max-width:768px){
-        @include title(24px)
-    }
 }
 .title--small
 {
     @include title(12px);
-    @media(max-width:768px){
-        @include title(22px)
-    }
 }
 
 .button{
@@ -124,6 +102,13 @@ body{
             background-color:variaveis.$corTextoSecundario;
             color:variaveis.$corBotaoDark;
         }
+    }
+
+    @media(max-width:768px)
+    {
+        font-size: 15px;
+        padding:9px 12px;
+        height: 40px;
     }
     }
 

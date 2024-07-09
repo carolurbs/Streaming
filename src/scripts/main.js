@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function(){
     const heroSection= document.querySelector('.hero');
     const alturaHero= heroSection.clientHeight;
+    const footerSection= document.querySelector('.footer');
+    const alturaFooter= footerSection.clientHeight;
     const scrollContainer = document.querySelector('.sugestions__scroll');
     scrollContainer.addEventListener("scroll", checkScrollPosition);
     window.addEventListener('scroll',function(){
@@ -8,12 +10,13 @@ document.addEventListener('DOMContentLoaded', function(){
     if(posicaoAtual<alturaHero)
     {
         ocultaElementosHeader();
+        ocultaElementosPopUp();
     }
     else{
         exibeElementosHeader();
+        exibeElementosPopUp();
     }
 });
-
 })
 document.getElementById("scrollLeftBtn").addEventListener("click", function() {
     document.querySelector(".sugestions__scroll").scrollBy({ left: -1200, behavior: 'smooth' });
@@ -44,7 +47,14 @@ function ocultaElementosHeader(){
     const header=document.querySelector('header')
     header.classList.add('header--is-hidden');
 }
-
+function ocultaElementosPopUp(){
+    const popUp=document.querySelector('.popupMenu__container')
+    popUp.classList.add('popupMenu__container--is-hidden');
+}
+function exibeElementosPopUp(){
+    const popUp=document.querySelector('.popupMenu__container')
+    popUp.classList.remove('popupMenu__container--is-hidden');
+}
 function exibeElementosHeader(){
     const header=document.querySelector('header')
     header.classList.remove('header--is-hidden');

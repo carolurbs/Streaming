@@ -26,6 +26,12 @@
 
             }
         }
+        @media(max-width:768px){
+            gap: 4px;
+            &--colunm{
+                grid-column: 3/4;
+            }
+        }
 
         &__info
         {

@@ -30,6 +30,9 @@
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
+        @media(max-width:768px){
+            padding: 8px 0;
+        }
 
     }
     &__logo{
@@ -52,16 +55,19 @@
 
         }
     }
-}
-.button{
-    height:50px;
-    
-    @media(max-width:768px)
-    {
-        font-size:15px;
-        height:40px;
-        padding:8px 11px;
-        letter-spacing:0;
+    .button{
+        height:50px;
+        
+        @media(max-width:768px)
+        {
+            font-size:15px;
+            height:40px;
+            padding:8px 11px;
+            letter-spacing:0;
+            &--hidden{
+                display: none;
+            }
+        }
     }
 }
 
